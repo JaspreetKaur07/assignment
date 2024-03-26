@@ -1,0 +1,95 @@
+/* Some default styles */
+body, h1, h2, p, ul, li, table {
+    margin: 0;
+    padding: 0;
+} 
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Applied a global font */
+body {
+    font-family:'Roboto' ,Arial, sans-serif;
+    line-height: 1.6;
+    color:  whitesmoke ;
+    background: url('XX.jpeg') center/cover no-repeat fixed;
+} 
+/* Styling the header */
+header {
+    background: linear-gradient(to bottom, #d70021, #9c0000);
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+/* Styling the main content area */
+main {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Styling each section */
+ section {
+    margin-bottom: 2rem;
+} 
+
+/* Styling the h2 elements */
+h2 {
+    margin-bottom: .5rem;
+} 
+
+/* Styling the facts list */
+#fun-facts {
+    background: url('download.jpeg') center/cover no-repeat #f8f8f8;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+#fun-facts h2 {
+    color: #d70021;
+    margin-bottom: 10px;
+}
+
+#fun-facts ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#fun-facts ul li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+#fun-facts ul li::before {
+    content: "🍫";
+    position: absolute;
+    left: 0;
+}
+
+#fun-facts ul li:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s;
+} 
+/* Styling the nutritional information table */
+#nutrition table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: url('images.jpeg') center/cover no-repeat;
+}
+
+#nutrition th, #nutrition td {
+    border: 1px solid #ddd;
+    padding: .5rem;
+    text-align: left;
+}
+
+/* Styling the footer */
+footer {
+    background: linear-gradient(to bottom, #353535, #000);
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
